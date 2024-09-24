@@ -9,6 +9,6 @@ namespace ReflectionSample.Models
      class CategoryModel
     {
         public int CatrgoryId { get; set; }
-        public string Title { get; set; }
+        public string Title  { get; set; }
     }
 }
