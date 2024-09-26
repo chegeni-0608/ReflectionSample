@@ -34,6 +34,11 @@
             this.btnPropertyWithReflection = new System.Windows.Forms.Button();
             this.lstProperty = new System.Windows.Forms.ListBox();
             this.btnGetMethod = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtFolderPath = new System.Windows.Forms.TextBox();
+            this.btnGenerateTree = new System.Windows.Forms.Button();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.btnGenerateProductCategory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGetClassListWithReflection
@@ -92,11 +97,61 @@
             this.btnGetMethod.UseVisualStyleBackColor = true;
             this.btnGetMethod.Click += new System.EventHandler(this.btnGetMethod_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(417, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Folder Path :";
+            // 
+            // txtFolderPath
+            // 
+            this.txtFolderPath.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtFolderPath.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
+            this.txtFolderPath.Location = new System.Drawing.Point(490, 46);
+            this.txtFolderPath.Name = "txtFolderPath";
+            this.txtFolderPath.Size = new System.Drawing.Size(145, 20);
+            this.txtFolderPath.TabIndex = 7;
+            // 
+            // btnGenerateTree
+            // 
+            this.btnGenerateTree.Location = new System.Drawing.Point(651, 46);
+            this.btnGenerateTree.Name = "btnGenerateTree";
+            this.btnGenerateTree.Size = new System.Drawing.Size(175, 23);
+            this.btnGenerateTree.TabIndex = 8;
+            this.btnGenerateTree.Text = "Generate Tree !";
+            this.btnGenerateTree.UseVisualStyleBackColor = true;
+            this.btnGenerateTree.Click += new System.EventHandler(this.btnGenerateTree_Click);
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(420, 72);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(215, 355);
+            this.treeView1.TabIndex = 9;
+            // 
+            // btnGenerateProductCategory
+            // 
+            this.btnGenerateProductCategory.Location = new System.Drawing.Point(651, 75);
+            this.btnGenerateProductCategory.Name = "btnGenerateProductCategory";
+            this.btnGenerateProductCategory.Size = new System.Drawing.Size(175, 23);
+            this.btnGenerateProductCategory.TabIndex = 10;
+            this.btnGenerateProductCategory.Text = "Generate Product Category Tree ! ";
+            this.btnGenerateProductCategory.UseVisualStyleBackColor = true;
+            this.btnGenerateProductCategory.Click += new System.EventHandler(this.btnGenerateProductCategory_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(838, 450);
+            this.Controls.Add(this.btnGenerateProductCategory);
+            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.btnGenerateTree);
+            this.Controls.Add(this.txtFolderPath);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGetMethod);
             this.Controls.Add(this.lstProperty);
             this.Controls.Add(this.btnPropertyWithReflection);
@@ -106,6 +161,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,6 +173,11 @@
         private System.Windows.Forms.Button btnPropertyWithReflection;
         private System.Windows.Forms.ListBox lstProperty;
         private System.Windows.Forms.Button btnGetMethod;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtFolderPath;
+        private System.Windows.Forms.Button btnGenerateTree;
+        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.Button btnGenerateProductCategory;
     }
 }
 
